@@ -64,21 +64,21 @@ TASKS = [
     CeleryTaskConfiguration(
         "safe_transaction_service.history.tasks.index_safe_events_task",
         "Index Safe events (L2)",
-        5,
+        30,
         IntervalSchedule.SECONDS,
         enabled=settings.ETH_L2_NETWORK,
     ),
     CeleryTaskConfiguration(
         "safe_transaction_service.history.tasks.index_new_proxies_task",
         "Index new Proxies",
-        15,
+        45,
         IntervalSchedule.SECONDS,
         enabled=settings.ETH_L2_NETWORK,
     ),
     CeleryTaskConfiguration(
         "safe_transaction_service.history.tasks.index_erc20_events_task",
         "Index ERC20/721 Events",
-        14,
+        42,
         IntervalSchedule.SECONDS,
     ),
     CeleryTaskConfiguration(

@@ -1,0 +1,3 @@
+FROM gnosispm/safe-transaction-service@sha256:450dc8770de069aab21529b5a0fc28f5a740c8c3648266e6b1289e8f2b024f8a
+
+COPY ./safe_transaction_service/history/management/commands/setup_service.py ./safe_transaction_service/history/management/commands/setup_service.py
